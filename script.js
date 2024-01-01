@@ -15,12 +15,18 @@ const x = setInterval(function() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the countdown
-  document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s `;
+  // Display the countdown with fun text and emojis
+  const countdownText = `
+    Nog even geduld!
+    Het Abcoude Twelve Diner begint over:
+    ${days} dagen ${hours} uur ${minutes} minuten ${seconds} seconden! 🍽️🎉
+  `;
+
+  document.getElementById("countdown").innerHTML = countdownText;
 
   // If the countdown is over, display a message
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    document.getElementById("countdown").innerHTML = "🎉 Het is tijd voor het Abcoude Twelve Diner! 🎉";
   }
 }, 1000);
