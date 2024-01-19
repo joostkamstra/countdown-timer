@@ -1,5 +1,5 @@
-// Set the date we're counting down to (6 juli 2023, 17:00 uur)
-const countDownDate = new Date("Jul 6, 2023 17:00:00").getTime();
+// Set the date we're counting down to (6 juli 2024, 17:00 uur)
+const countDownDate = new Date("Jul 6, 2024 17:00:00").getTime();
 
 // Update the countdown every 1 second
 const x = setInterval(function() {
