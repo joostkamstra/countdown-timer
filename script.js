@@ -1,5 +1,5 @@
-// Set the date we're counting down to
-const countDownDate = new Date("Dec 21, 2024 17:00:00").getTime();
+// Set the date we're counting down to (6 juli 2023, 17:00 uur)
+const countDownDate = new Date("Jul 6, 2023 17:00:00").getTime();
 
 // Update the countdown every 1 second
 const x = setInterval(function() {
@@ -18,8 +18,8 @@ const x = setInterval(function() {
   // Display the countdown with fun text and emojis
   const countdownText = `
     Nog even geduld!
-    Het Abcoude Twelve Diner begint over:
-    ${days} dagen ${hours} uur ${minutes} minuten ${seconds} seconden! 🍽️🎉
+    Het 'Abcoude Twelve Summer Edition Dinner' begint over:
+    ${days} dagen ${hours} uur ${minutes} minuten ${seconds} seconden! 🌴🍹🌞
   `;
 
   document.getElementById("countdown").innerHTML = countdownText;
@@ -27,6 +27,6 @@ const x = setInterval(function() {
   // If the countdown is over, display a message
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "🎉 Het is tijd voor het Abcoude Twelve Diner! 🎉";
+    document.getElementById("countdown").innerHTML = "🎉 Het is tijd voor het 'Abcoude Twelve Summer Edition Dinner'! 🎉";
   }
 }, 1000);
